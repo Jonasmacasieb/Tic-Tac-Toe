@@ -1,0 +1,443 @@
+@media only screen and (max-device-width: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+   
+
+    .button4 {
+      top: 20px; /* Adjust button position */
+      left: 10px; /* Adjust button position */
+    }
+  
+  
+
+    .container {
+      height: auto; /* Adjust height */
+      width: 90%; /* Adjust width */
+      margin: 0 auto; /* Center container */
+    }
+  
+    .text-color1 {
+      margin-left: 0; /* Reset margin */
+      font-size: 28px; /* Adjust font size */
+    }
+  
+    .cell {
+      width: 80px; /* Adjust cell width */
+      height: 80px; /* Adjust cell height */
+    }
+  
+    .board {
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+      grid-gap: 5px; /* Adjust grid gap */
+      margin: 5px; /* Adjust margin */
+      
+    }
+  
+    .button1,
+    .button2,
+    .button3 {
+      margin: 5px; /* Adjust button margins */
+    }
+
+    
+    #scoreboard {
+      width: 90%; /* Adjust scoreboard width */
+      margin: 10px auto; /* Center scoreboard */
+    }
+  }
+  @media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  
+    .button4 {
+      top: 20px; /* Adjust button position */
+      left: 10px; /* Adjust button position */
+    }
+  
+    .switch {
+      left: 150px; /* Adjust switch position */
+      top: 20px; /* Adjust switch position */
+    }
+  
+    .container {
+      height: auto; /* Adjust height */
+      width: 90%; /* Adjust width */
+      margin: 0 auto; /* Center container */
+    }
+  
+    .text-color1 {
+      margin-left: 0; /* Reset margin */
+      font-size: 28px; /* Adjust font size */
+    }
+  
+    .cell {
+      width: 80px; /* Adjust cell width */
+      height: 80px; /* Adjust cell height */
+    }
+  
+    .board {
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+      grid-gap: 5px; /* Adjust grid gap */
+      margin: 5px; /* Adjust margin */
+    }
+  
+    .button1,
+    .button2,
+    .button3 {
+      margin: 5px; /* Adjust button margins */
+    }
+  
+    #scoreboard {
+      width: 90%; /* Adjust scoreboard width */
+      margin: 10px auto; /* Center scoreboard */
+    }
+  }
+  
+@media only screen and (max-device-width: 390px) and (max-device-height: 844px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  
+    
+      .button4 {
+        top: 20px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+      }
+    
+      .switch {
+        left: 150px; /* Adjust switch position */
+        top: 20px; /* Adjust switch position */
+      }
+    
+      .container {
+        height: auto; /* Adjust height */
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center container */
+      }
+    
+      .text-color1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 28px; /* Adjust font size */
+      }
+    
+      .cell {
+        width: 80px; /* Adjust cell width */
+        height: 80px; /* Adjust cell height */
+      }
+      .board {
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+        grid-gap: 5px; /* Adjust grid gap */
+        margin: 5px; /* Adjust margin */
+      }
+    
+      .button1,
+      .button2,
+      .button3 {
+        margin: 5px; /* Adjust button margins */
+      }
+      
+    
+      #scoreboard {
+        width: 90%; /* Adjust scoreboard width */
+        margin: 10px auto; /* Center scoreboard */
+      }
+    
+}
+@media only screen and (max-device-width: 430px) and (max-device-height: 932px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  
+    
+      .button4 {
+        top: 20px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+      }
+    
+      .switch {
+        left: 150px; /* Adjust switch position */
+        top: 20px; /* Adjust switch position */
+      }
+    
+      .container {
+        height: auto; /* Adjust height */
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center container */
+      }
+    
+      .text-color1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 28px; /* Adjust font size */
+      }
+    
+      .cell {
+        width: 80px; /* Adjust cell width */
+        height: 80px; /* Adjust cell height */
+      }
+    
+      .board {
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+        grid-gap: 5px; /* Adjust grid gap */
+        margin: 5px; /* Adjust margin */
+      }
+      .button1,
+      .button2,
+      .button3 {
+        margin: 5px; /* Adjust button margins */
+      }
+    
+      #scoreboard {
+        width: 90%; /* Adjust scoreboard width */
+        margin: 10px auto; /* Center scoreboard */
+      }
+    
+}
+@media only screen and (max-device-width: 360px) and (max-device-height: 740px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    
+    
+      .button4 {
+        top: 20px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+      }
+    
+      .switch {
+        left: 150px; /* Adjust switch position */
+        top: 20px; /* Adjust switch position */
+      }
+    
+      .container {
+        height: auto; /* Adjust height */
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center container */
+      }
+    
+      .text-color1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 28px; /* Adjust font size */
+      }
+    
+      .cell {
+        width: 80px; /* Adjust cell width */
+        height: 80px; /* Adjust cell height */
+      }
+    
+      .board {
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+        grid-gap: 5px; /* Adjust grid gap */
+        margin: 5px; /* Adjust margin */
+      }
+    
+      .button1,
+      .button2,
+      .button3 {
+        margin: 5px; /* Adjust button margins */
+      }
+    
+      #scoreboard {
+        width: 90%; /* Adjust scoreboard width */
+        margin: 10px auto; /* Center scoreboard */
+      }
+    
+}
+
+@media only screen and (max-device-width: 412px) and (max-device-height: 915px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+   
+      .button4 {
+        top: 20px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+      }
+    
+      .switch {
+        left: 150px; /* Adjust switch position */
+        top: 20px; /* Adjust switch position */
+      }
+    
+      .container {
+        height: auto; /* Adjust height */
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center container */
+      }
+    
+      .text-color1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 28px; /* Adjust font size */
+      }
+    
+      .cell {
+        width: 80px; /* Adjust cell width */
+        height: 80px; /* Adjust cell height */
+      }
+    
+      .board {
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+        grid-gap: 5px; /* Adjust grid gap */
+        margin: 5px; /* Adjust margin */
+      }
+      .button1,
+      .button2,
+      .button3 {
+        margin: 5px; /* Adjust button margins */
+      }
+    
+      #scoreboard {
+        width: 90%; /* Adjust scoreboard width */
+        margin: 10px auto; /* Center scoreboard */
+      }
+    
+}
+
+@media only screen and (max-device-width: 412px) and (max-device-height: 914px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    
+    
+      .button4 {
+        top: 20px; /* Adjust button position */
+        left: 10px; /* Adjust button position */
+      }
+    
+      .switch {
+        left: 150px; /* Adjust switch position */
+        top: 20px; /* Adjust switch position */
+      }
+    
+      .container {
+        height: auto; /* Adjust height */
+        width: 90%; /* Adjust width */
+        margin: 0 auto; /* Center container */
+      }
+    
+      .text-color1 {
+        margin-left: 0; /* Reset margin */
+        font-size: 28px; /* Adjust font size */
+      }
+    
+      .cell {
+        width: 80px; /* Adjust cell width */
+        height: 80px; /* Adjust cell height */
+      }
+    
+      .board {
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+        grid-gap: 5px; /* Adjust grid gap */
+        margin: 5px; /* Adjust margin */
+      }
+    
+      .button1,
+      .button2,
+      .button3 {
+        margin: 5px; /* Adjust button margins */
+      }
+    
+      #scoreboard {
+        width: 90%; /* Adjust scoreboard width */
+        margin: 10px auto; /* Center scoreboard */
+      }
+    
+}
+
+
+
+@media only screen and (max-device-width: 435px) and (max-device-height: 672px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+ 
+  
+    .button4 {
+      top: 20px; /* Adjust button position */
+      left: 10px; /* Adjust button position */
+    }
+  
+    .switch {
+      left: 150px; /* Adjust switch position */
+      top: 20px; /* Adjust switch position */
+    }
+  
+    .container {
+      height: auto; /* Adjust height */
+      width: 90%; /* Adjust width */
+      margin: 0 auto; /* Center container */
+    }
+  
+    .text-color1 {
+      margin-left: 0; /* Reset margin */
+      font-size: 28px; /* Adjust font size */
+    }
+  
+    .cell {
+      width: 80px; /* Adjust cell width */
+      height: 80px; /* Adjust cell height */
+    }
+  
+    .board {
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+      grid-gap: 5px; /* Adjust grid gap */
+      margin: 5px; /* Adjust margin */
+    }
+  
+    .button1,
+    .button2,
+    .button3 {
+      margin: 5px; /* Adjust button margins */
+    }
+  
+    #scoreboard {
+      width: 90%; /* Adjust scoreboard width */
+      margin: 10px auto; /* Center scoreboard */
+    }
+  
+}
+
+
+@media only screen and (max-device-width: 435px) and (max-device-height: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  
+  
+    .button4 {
+      top: 20px; /* Adjust button position */
+      left: 10px; /* Adjust button position */
+    }
+  
+    .switch {
+      left: 150px; /* Adjust switch position */
+      top: 20px; /* Adjust switch position */
+    }
+  
+    .container {
+      height: auto; /* Adjust height */
+      width: 90%; /* Adjust width */
+      margin: 0 auto; /* Center container */
+    }
+  
+    .text-color1 {
+      margin-left: 0; /* Reset margin */
+      font-size: 28px; /* Adjust font size */
+    }
+  
+    .cell {
+      width: 80px; /* Adjust cell width */
+      height: 80px; /* Adjust cell height */
+    }
+  
+    .board {
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+      grid-gap: 5px; /* Adjust grid gap */
+      margin: 5px; /* Adjust margin */
+    }
+  
+    .button1,
+    .button2,
+    .button3 {
+      margin: 5px; /* Adjust button margins */
+    }
+  
+    #scoreboard {
+      width: 90%; /* Adjust scoreboard width */
+      margin: 10px auto; /* Center scoreboard */
+    }
+  
+}
+

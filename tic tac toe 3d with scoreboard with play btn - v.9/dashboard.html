@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <audio id="clickSound" src="menu.mp3"></audio>
+    <audio id="floatSound" src="float.mp3"></audio>
+    <audio id="openSound" src="tictactoe.mp3"></audio>
+    
+    <div class="header">
+        <h1 class="ttt" id="floatingTitle">Tic Tac Toe</h1>
+        <img src="arrow-left-short.svg" class="backstr" alt="back" id="backButton">
+    </div>
+    <div class="container-wrapper">
+        <div class="containerlvl">
+            <div class="course-box" id="courseBox1">
+                <span class="course-name">3 by 3</span>
+                <span class="lesson-count">Player</span>
+                <button class="start-btn" onclick="startGame('3by3')">Start Game</button>
+            </div>
+            <div class="course-box" id="courseBox2">
+                <span class="course-name">4 by 4</span>
+                <span class="lesson-count">Player</span>
+                <button class="start-btn" onclick="startGame('4by4')">Start Game</button>
+            </div>
+            <div class="course-box" id="courseBox3">
+                <span class="course-name">Vs AI 3 by 3</span>
+                <span class="lesson-count">Computer</span>
+                <button class="start-btn" onclick="startGame('vsAi3by3')">Start Game</button>
+            </div>
+            <div class="course-box" id="courseBox4">
+                <span class="course-name">Vs AI 4 by 4</span>
+                <span class="lesson-count">Computer</span>
+                <button class="start-btn" onclick="startGame('vsAi4by4')">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to play the click sound
+        function playClickSound() {
+            var clickSound = document.getElementById('clickSound');
+            clickSound.currentTime = 0; // Reset the sound to the beginning
+            clickSound.play();
+        }
+
+        // Function to play the float sound
+        function playFloatSound() {
+            var floatSound = document.getElementById('floatSound');
+            floatSound.currentTime = 0; // Reset the sound to the beginning
+            floatSound.play();
+        }
+
+        // Function to play the open sound
+        function playOpenSound() {
+            var openSound = document.getElementById('openSound');
+            openSound.currentTime = 0; // Reset the sound to the beginning
+            openSound.play();
+        }
+
+        // Function to handle back navigation
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+
+        // Add event listeners to the elements
+        document.getElementById('backButton').addEventListener('click', function() {
+            playClickSound();
+            setTimeout(goBack, 300); // Delay to allow sound to play
+        });
+
+        var courseBoxes = document.querySelectorAll('.course-box');
+        courseBoxes.forEach(function(box) {
+            box.addEventListener('click', playClickSound);
+        });
+
+        var startButtons = document.querySelectorAll('.start-btn');
+        startButtons.forEach(function(button) {
+            button.addEventListener('click', playClickSound);
+        });
+
+        function startGame(mode) {
+            if (mode === '3by3') {
+                window.location.href = '3by3.html';
+            } else if (mode === '4by4') {
+                window.location.href = '4by4.html';
+            } else if (mode === 'vsAi3by3') {
+                window.location.href = 'vsAi3by3.html';
+            } else if (mode === 'vsAi4by4') {
+                window.location.href = 'vsAi4by4.html';
+            }
+        }
+
+        // Play the floating sound when the animation starts
+        var floatingTitle = document.getElementById('floatingTitle');
+        floatingTitle.addEventListener('animationstart', playFloatSound);
+
+        // Play the open sound when the page loads
+        window.addEventListener('load', playOpenSound);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles4by4.css">
+    <link rel="stylesheet" href="styles14by4.css">
+    <link rel="stylesheet" href="stylesrespon4by4.css">
+    <link rel="stylesheet" href="menu.css">
+    
+</head>
+<style>
+    .menuhm{
+width: 30px;
+height: 25px;
+position: absolute;
+right: 20px;
+top: 20px;
+background-color: #fff;
+border-radius: 5px;
+
+}
+
+</style>
+<body >
+   <button id="showTopScores" class="button4 sound-button">Top Scores</button>
+<div id="topScoresModal" class="modal">
+    <div class="modal-content">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboardList">
+            <li class="nameli"></li>
+        </ul>
+        <button id="closeTopScoresModal" class="button sound-button1">Close</button>
+    </div>  
+</div>
+<img src="list.svg" alt="menu" id="myBtn"  class="menuhm sound-button">
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        
+        <h2>SETTINGS</h2>
+        <button class="close-button sound-button1">X</button>
+        <div class="supercell-id">
+          <img src="user.png" alt="Player Avatar">
+          <div>
+            <button class="home-btn sound-button" onclick="goToDashboard()">Home</button>
+
+          </div>
+          <!-- <button class="buttonid">OPEN ID</button> -->
+        </div>
+      
+        <div class="section">
+          <h2>MUSIC & SOUNDS</h2>
+          <div class="options">
+            <img src="music.png" alt="Music Icon">
+            <input type="range" id="musicVolume" min="0" max="100" value="50">
+            <img src="plus.png" alt="Volume Icon" id="increaseVolumeIcon1">
+          </div>
+        <br>
+          <div class="options">
+            <img src="sound.png" alt="Sound Icon">
+            <input type="range" id="soundVolume" min="0" max="100" value="50">
+            <img src="plus.png" alt="Volume Icon" id="increaseVolumeIcon2">
+          </div>
+        </div>
+      
+
+      
+        <button id="moreSettingsButton" class="button sound-button">MORE SETTINGS</button>
+    </div>
+</div>
+<div id="backgroundModal" class="modal">
+    <div class="modal-content">
+        <h2>Background </h2>
+        <button class="close-button1 sound-button1">X</button>
+        <button class="close-button2 sound-button1" ><img src="arrow-left-short.svg" alt="back"></button>
+        <br>
+        <div class="box-colors">
+            
+        <div id="selectedColorDisplay" class="color-box1"></div>
+        <div id="colorPickerContainer">
+            <div class="color-row">
+                <div class="color-box" style="background-color: #000000;"></div>
+                <div class="color-box" style="background-color: #444444;"></div>
+                <div class="color-box" style="background-color: #666666;"></div>
+                <div class="color-box" style="background-color: #999999;"></div>
+                <div class="color-box" style="background-color: #cccccc;"></div>
+                <div class="color-box" style="background-color: #ffffff;"></div>
+            </div>
+            <div class="color-row">
+                <div class="color-box" style="background-color: #ff0000;"></div>
+                <div class="color-box" style="background-color: #ff9900;"></div>
+                <div class="color-box" style="background-color: #ffff00;"></div>
+                <div class="color-box" style="background-color: #00ff00;"></div>
+                <div class="color-box" style="background-color: #00ffff;"></div>
+                <div class="color-box" style="background-color: #0000ff;"></div>
+            </div>
+            <div class="color-row">
+                <div class="color-box" style="background-color: #9900ff;"></div>
+                <div class="color-box" style="background-color: #ff00ff;"></div>
+                <div class="color-box" style="background-color: #ff0099;"></div>
+                <div class="color-box" style="background-color: #ff6600;"></div>
+                <div class="color-box" style="background-color: #cc6600;"></div>
+                <div class="color-box" style="background-color: #999900;"></div>
+            </div>
+            <div class="color-row">
+                <div class="color-box" style="background-color: #009900;"></div>
+                <div class="color-box" style="background-color: #009999;"></div>
+                <div class="color-box" style="background-color: #003399;"></div>
+                <div class="color-box" style="background-color: #330099;"></div>
+                <div class="color-box" style="background-color: #990099;"></div>
+                <div class="color-box" style="background-color: #ff0000;"></div>
+            </div>
+        </div>    
+        <button id="confirmButton"class="bgbtn1 sound-button" role="button">Confirm</button>
+    </div>
+        <br><br>
+
+        <h2>UI SOUNDS</h2>
+        <div class="section">
+            <div class="options">
+              <img src="sound.png" alt="Sound Icon">
+              <input type="range" id="uisoundVolume" min="0" max="100" value="25">
+              <img src="plus.png" alt="Volume Icon" id="increaseVolumeIcon3">
+            </div>
+          </div>
+    </div>
+  
+</div>
+
+
+    <div class="container">
+       
+        <br> <br> <br> 
+        <h1 class="text-color1">Tic Tac Toe</h1>
+   
+        <div id="board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div class="cell" data-index="9"></div>
+            <div class="cell" data-index="10"></div>
+            <div class="cell" data-index="11"></div>
+            <div class="cell" data-index="12"></div>
+            <div class="cell" data-index="13"></div>
+            <div class="cell" data-index="14"></div>
+            <div class="cell" data-index="15"></div>
+        </div>
+        <br>
+        <button id="reset" class="button1 sound-button">Reset</button>
+        <button id="newGame" class="button3 sound-button">New Game</button>
+        <button id="showHistory" class="button2 sound-button">Show History</button>
+        
+        <div id="scoreboard">
+            <p class="text-color"><b>Player X:</b> <span id="playerXScore" class="score">0</span></p>
+            <p class="text-color"><b>Player O: </b><span id="playerOScore" class="score">0</span></p>
+        </div>
+       
+        <div id="winnerModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close"></span>
+                <p id="winnerText"></p>
+              
+                <form id="firstMoveForm">
+                    <label class="radio-label x-label">
+                        <input type="radio" name="firstMove" value="X" checked> <span class="x-text">X</span> goes first
+                    </label>
+                    <label class="radio-label o-label">
+                        <input type="radio" name="firstMove" value="O"> <span class="o-text">O</span> goes first
+                    </label>
+                    
+                    <button type="button" id="confirmFirstMoveButton">Confirm</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="showHistoryModal" class="modal">
+            <div class="modal-content">
+             
+                <p id="historyContent"></p>
+                <button id="closeHistoryModal" class="historyclose sound-button1">Close</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Dev-Jonas.</p>
+        </div>
+        <div id="newGameModal" class="modal">
+            <div class="modal-content">
+               <b><span>Are you sure you want to start a new game?</span></b> 
+                <br>
+                <button id="confirmNewGame" class="buttongreen sound-button1">Yes</button>
+                <button id="closeModalNewGame" class="buttonred sound-button1">Cancel</button>
+            </div>
+        </div>
+        
+
+
+        
+
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+  </div>
+        <audio id="menuSound" src="menu.mp3"></audio> 
+        <audio id="menuSound1" src="menu-hover.mp3"></audio>
+        <audio id="clickSound" src="tap.mp3"></audio>
+        <audio id="winSound" src="Yayyy.mp3"></audio>
+    </div>
+    <script src="script4by4.js"></script>
+    <script src="scriptcolor.js"></script>
+
+    <script>
+        function goToDashboard() {
+            window.location.href = 'dashboard.html'; // Redirect to dashboard.html
+        }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button5 = document.querySelectorAll('.sound-button');
+
+    button5.forEach(button => {
+        button.addEventListener('click', function() {
+            const menuSound = document.getElementById('menuSound');
+            menuSound.play();
+        });
+});
+
+const button6 = document.querySelectorAll('.sound-button1');
+
+    button6.forEach(button => {
+        button.addEventListener('click', function() {
+            const menuSound = document.getElementById('menuSound1');
+            menuSound1.play();
+        });
+    });
+});
+
+        const musicVolumeSlider = document.getElementById('musicVolume');
+        const soundVolumeSlider = document.getElementById('soundVolume');
+   
+        const uisoundVolumeSlider = document.getElementById('uisoundVolume');
+        const menuSound = document.getElementById('menuSound');
+        const menuHoverSound = document.getElementById('menuSound1');
+
+        menuSound.volume = musicVolumeSlider.value / 100;
+        menuHoverSound.volume = soundVolumeSlider.value / 100;
+        clickSound.volume = uisoundVolumeSlider.value / 100;
+        winSound.volume = uisoundVolumeSlider.value / 100;
+
+        musicVolumeSlider.addEventListener('input', function() {
+            const volume = this.value / 100;
+            bgMusic.volume = volume;
+        });
+
+        soundVolumeSlider.addEventListener('input', function() {
+            const volume = this.value / 100;
+            clickSound.volume = volume;
+            winSound.volume = volume;
+        });
+      
+
+        // Update volume on slider change
+        uisoundVolumeSlider.addEventListener('input', function() {
+            const volume = this.value / 100;
+            menuSound.volume = volume;
+            menuHoverSound.volume = volume;
+        });
+
+        
+
+        const increaseVolumeIcon1 = document.getElementById('increaseVolumeIcon1');
+        const increaseVolumeIcon2 = document.getElementById('increaseVolumeIcon2');
+        const increaseVolumeIcon3 = document.getElementById('increaseVolumeIcon3');
+
+        // Add click event listeners to the plus icons
+        increaseVolumeIcon1.addEventListener('click', function() {
+            increaseVolume(musicVolumeSlider);
+        });
+
+        increaseVolumeIcon2.addEventListener('click', function() {
+            increaseVolume(soundVolumeSlider);
+        });
+
+        increaseVolumeIcon3.addEventListener('click', function() {
+            increaseVolume(uisoundVolumeSlider);
+        });
+
+        function increaseVolume(volumeSlider) {
+            // Get the current volume
+            let currentVolume = parseFloat(volumeSlider.value);
+            // Increment the volume by a certain amount (e.g., 10)
+            const increment = 10;
+            currentVolume += increment;
+            // Ensure volume doesn't exceed 100
+            currentVolume = Math.min(currentVolume, 100);
+            // Update the volume slider
+            volumeSlider.value = currentVolume;
+            // Trigger the change event to update volume
+            volumeSlider.dispatchEvent(new Event('input'));
+        }
+    </script>
+
+  
+    
+</body>
+</html>

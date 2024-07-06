@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, currently supported by most browsers */
+  }
+
+
+  .board {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    grid-template-columns: repeat(3, 80px); /* Adjust grid columns */
+    grid-gap: 5px; /* Adjust grid gap */
+    margin: 5px; /* Adjust margin */
+  
+  }
+
+/* Container styles */
+.container {
+    text-align: center;
+   
+  }
+  .text-color1 {
+    font-family: 'Arial', sans-serif;
+   justify-content: center;
+   font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background: linear-gradient(45deg, #193cff, #ff005d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Title styles */
+  .text-color {
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 10px;
+    
+
+  }
+
+  
+.cell.clicked {
+    animation: cellClickAnimation 0.3s ease;
+  
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+  border-radius: 10px;
+    background-color: #a3bffc;
+    border: 2px solid #ddd;
+    position: relative;
+    
+  }
+  .cell img {
+    
+  position: inherit;
+    width: 70px;
+    height: 70px;
+    object-fit: contain; /* Ensure images fit while maintaining aspect ratio */
+ 
+    
+  }
+  
+.button1 {
+  
+    margin-left: 0px;
+    padding:  10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff0000;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .button2 {
+   
+    margin-left: 0px;
+    padding:10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0004ff;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  .button3 {
+   
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #06fd27;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .button1:hover {
+    background-color: #555;
+  }
+  
+  
+  .button4 {
+      
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff3dc5;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  } 
+  
+#scoreboard {
+  width: 90%; /* Adjust scoreboard width */
+      margin: 10px auto; /* Center scoreboard */
+    border: 2px solid black; /* You can adjust the width and color of the border as needed */
+    padding: 10px; /* Add some padding to make it look better */
+  margin-top: 10px;
+
+    border-radius: 10px;
+    background-color: lightgray;
+  }
+
+  
+  .home-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #2f5efa;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+.home-btn:hover {
+    background-color: #1d3ea8;
+}

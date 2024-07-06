@@ -1,0 +1,136 @@
+
+.container.modal {
+    width: auto; /* Change to auto to adjust based on content */
+    max-width: 80%; /* Set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+}
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buttonmore {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #eee;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #c00;
+  }
+  
+  .close-button1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .close-button1:hover {
+    background-color: #c00;
+  }
+  
+  .close-button2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(165, 165, 165);
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .close-button2:hover {
+    background-color: #c00;
+  }
+  .supercell-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #444;
+  }
+  
+  .supercell-id img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .supercell-id p {
+    margin: 0;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555;
+  }
+  
+  .options img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .options p {
+    margin: 0;
+  }
+  
+  .off-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .off-button:hover {
+    background-color: #c00;
+  }

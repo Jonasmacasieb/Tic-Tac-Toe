@@ -1,0 +1,142 @@
+
+/* snowball */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .snowflake {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    animation: snowflakes-fall 6s linear infinite;
+    -webkit-animation: snowflakes-fall 6s linear infinite;
+    pointer-events: none;
+  }
+  
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  
+  
+  
+  /* Define the animation */
+  @keyframes cellClickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      height: 100vh; /* Set height to 100% of viewport height */
+      width: 100vw; /* Set width to 100% of viewport width */
+      overflow: hidden; /* Hide any overflow */
+      position: relative; /* Position relative to handle absolute positioning inside */
+      margin: 0; /* Remove any default margin */
+      background-image: url('login bg.png');
+      background-position: center; /* This will position the background image in the center */
+      background-size: cover; /* This will cover the entire background */
+  }
+  
+  
+  .resized-image {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .login-container {
+      position: absolute; /* Position absolute to center the content */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the container */
+      text-align: center;
+  }
+  
+  .login-container h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+  }
+  
+  .button-74 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:hover {
+    background-color: #fff;
+  }
+  
+  .button-74:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-74 {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .button-71 {
+      padding: 16px 48px;
+    }
+  }
+  
+  .button1 {
+     
+      border: 0;
+      border-radius: 8px;
+   
+      color: #616161;
+      font-family: Phantomsans, sans-serif;
+      
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      top: -260px;
+  }
+  
+  .button1:hover {
+      transform: translateY(-3px);
+  }
+  
+  @media (max-width: 600px) {
+      .login-container {
+          margin-top: 10%;
+      }
+  
+      .login-container h2 {
+          font-size: 1.5em;
+      }
+  }
